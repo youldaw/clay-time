@@ -1,0 +1,474 @@
+@font-face {
+    font-family: 'SF Compact Text';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Compact Text'), url('../fonts/sf-compact/SFCompactText-Regular.ttf') format('truetype');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: 'Mulish';
+	background: #F6F3F1;
+}
+
+a, p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+    text-decoration: none;
+    line-height: 1.2;
+}
+button:focus {
+	outline: none!important;
+	box-shadow: none;
+}
+input:focus{
+	outline: none!important;
+}
+a:active, a:focus {
+  outline: 0;
+  outline: none!important;
+  -moz-outline-style: none;
+}
+
+a,img,span,input,button {
+	transition: .3s all ease;
+}
+
+a,span {
+	display: inline-block;
+}
+
+
+.wrapper {
+	overflow: hidden;
+}
+.title h2 {
+	color: #000;
+	font-family: 'SF Compact Text';
+	font-size: 64px;
+	font-weight: 457;
+	line-height: 95%;
+	letter-spacing: -1.92px;
+}
+
+
+header {
+	padding: 40px 0 34px;
+}
+header .navbar .nav-item .nav-link {
+	color: #000;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 150.086%;
+	letter-spacing: -0.2px;
+	padding: 0;
+}
+header .navbar-expand-lg .navbar-collapse {
+	justify-content: flex-end;
+}
+header .navbar-nav {
+	padding: 10px;
+	gap: 0 63px;
+}
+header .navbar {
+	padding: 0;
+}
+
+
+/* main section */
+.main-sec {
+	background-color: #89947B;
+	position: relative;
+	
+	/* background-size: 49.4% 100%; */
+}
+.main-sec::after {
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 49.3%;
+    height: 100%;
+    background-image: url(../images/main-img.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 1;
+    background-size: cover
+}
+.main-left {
+	padding: 215px 0;
+	position: relative;
+	z-index: 2;
+}
+.center-img {
+	position: absolute;
+    right: -80px;
+    top: 0;
+    height: 100%;
+}
+.main-title,
+.main-title-text {
+	position: relative;
+}
+.main-title h1 {
+	color: #F6F3F1;
+	font-family: 'SF Compact Text';
+	font-size: 92px;
+	font-style: normal;
+	font-weight: 790;
+	line-height: 95%;
+	letter-spacing: 0.92px;
+	margin-bottom: 8px;
+}
+.main-title-text {
+	display: flex;
+	align-items: center;
+	gap: 0 80px;
+}
+.main-title-text span {
+	color: #F6F3F1;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 150.086%;
+	letter-spacing: -0.8px;
+}
+.main-text {
+	max-width: 535px;
+	padding-top: 50px;
+	margin-top: 50px;
+	border-top: 1px solid #F6F3F1;
+}
+.main-text p {
+	color: #F6F3F1;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 150.086%;
+	letter-spacing: -0.8px;
+	margin-bottom: 40px;
+}
+.main-text p:last-child {
+	margin-bottom: 0;
+}
+
+
+.main-right {
+	height: 100%;
+}
+.main-right img {
+	height: 100%;
+	/* width: 100%; */
+}
+
+/* Почему именно Clay time? */
+.why-clay {
+	padding: 120px 0 65px;
+}
+.why-clay .title {
+	margin-bottom: 65px;
+}
+.why-col {
+	padding: 0;
+}
+.why-block {
+	position: relative;
+}
+.why-block::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 300%;
+	height: 2px;
+	background: #89947B;
+}
+.why-block.two::before {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: -100%;
+	width: 300%;
+	height: 2px;
+	background: #89947B;
+}
+.why-block .why-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+	text-align: center;
+	padding: 20px;
+	border-right: 1px solid #89947B;
+	border-left: 1px solid #89947B;
+}
+.why-block .why-text p {
+	margin-bottom: 24px;
+	color: #000;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 120%;
+}
+.why-block .why-text span {
+	color: #000;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 120%;
+	letter-spacing: 0.58px;
+	max-width: 252px;
+}
+.why-block .why-img img {
+	width: 100%;
+	height: 100%;
+}
+.why-block .why-img {
+	height: 100%;
+	width: 100%;
+	border-right: 1px solid #89947B;
+	border-left: 1px solid #89947B;
+}
+.why-block .for-first {
+	border-left: 2px solid #89947B;
+}
+.why-block .for-last {
+	border-right: 2px solid #89947B;
+}
+/* about page */
+.about-top .about-top-img img {
+	width: 100%;
+}
+
+.pottery-sec {
+	padding: 75px 0 80px;
+	position: relative;
+}
+.pottery-sec .title {
+	margin-bottom: 58px;
+}
+.pottery-sec .pottery-block {
+	text-align: center;
+}
+.pottery-sec .pottery-block p {
+	margin-top: 17px;
+	color: #000;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 150.086%;
+}
+
+.about-offer {
+	background: #F3E8E1;
+}
+.about-offer .row {
+	align-items: center;
+}
+.offer-right {
+	text-align: right;
+}
+
+.offer-left .title {
+	margin-bottom: 60px;
+}
+.offer-left .offer-text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 32px 0;
+}
+.offer-left .offer-text p {
+	display: flex;
+	align-items: flex-start;
+	gap: 0 20px;
+}
+.offer-left .offer-text p:first-child {
+	max-width: 370px;
+}
+.offer-left .offer-text p:nth-child(2){
+	max-width: 440px;
+}
+.offer-left .offer-text p:last-child {
+	max-width: 370px;
+}
+
+.our-space {
+	padding: 120px 0;
+}
+.our-space .title {
+	margin-bottom: 60px;
+}
+.our-left {
+	position: relative;
+	padding: 75px 75px 95px 95px;
+	height: 660px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.our-left .img-border {
+	position: absolute;
+	width: 100%;
+}
+.our-left .our-img {
+	width: 100%;
+}
+.our-rov {
+	display: flex;
+	align-items: center;
+}
+.our-right {
+	margin-left: 14px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 60px 0;
+}
+.our-right p {
+	color: #000;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 150.086%;
+}
+
+/* Наши преподаватели */
+.our-teachers {
+	padding: 100px 0 120px;
+	background: #F3E8E1;
+}
+.our-teachers .title {
+	margin-bottom: 50px;
+}
+.teachers-rov {
+	justify-content: space-between;
+}
+.teachers-img img {
+	width: 100%;
+}
+.teachers-img {
+	margin-bottom: 50px;
+}
+.teachers-name {
+	margin-bottom: 32px;
+}
+.teachers-name p {
+	color: #000;
+	font-family: 'SF Compact Text';
+	font-size: 32px;
+	font-weight: 457;
+	line-height: 95%;
+	letter-spacing: 0.32px;
+	margin-bottom: 4px;
+}
+.teachers-name span {
+	display: block;
+	color: #000;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 150.086%;
+}
+.teachers-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px 0;
+}
+.teachers-info .info-in {
+	display: flex;
+	align-items: flex-start;
+	gap: 0 44px;
+}
+.teachers-info .info-in span,
+.teachers-info .info-in p {
+	min-width: 160px;
+	color: #000;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	padding: 100px 0;
+	background: #89947B;
+}
+footer .ftr-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 24px 0;
+}
+footer .ftr-menu a {
+	color: #F6F3F1;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 150.086%;
+	letter-spacing: -0.2px;
+}
+footer .ftr-map {
+	height: 236px;
+	overflow: hidden;
+}
+footer .ftr-map img {
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1440px){
+	.center-img {
+		right: -76px;
+	}
+}
+
+
